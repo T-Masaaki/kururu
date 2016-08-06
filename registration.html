@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>会員情報入力 - メルカリ スマホでかんたん フリマアプリ</title>
+    <meta name="description" content="CMで話題！フリマアプリ「メルカリ」は、スマホから誰でも簡単に売り買いが楽しめるフリマアプリです。購入時はクレジットカード・キャリア決済・コンビニ・銀行ATMで支払いでき、品物が届いてから出品者に入金される独自システムで安心です。">
+    
+    <link href="registration.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="single-container">
+      <header class="single-header">
+        <h1>
+          <a href="https://www.mercari.com/jp/">
+            <img src="" alt="くるりのロゴ">
+          </a>
+        </h1>
+            
+
+      <nav class="progress-bar signup-bar">
+        <ol class="clearfix">
+          <li class="active">
+            会員情報
+            <div class="progress-status"></div>
+          </li>
+          <li class="">
+            住所入力
+            <div class="progress-status"></div>
+          </li>
+          <li class="">
+            支払い方法
+            <div class="progress-status"></div>
+          </li>
+          <li class="">
+                      完了
+                    <div class="progress-status"></div>
+          </li>
+        </ol>
+      </nav>
+      </header>
+
+    <main class="single-main">
+      <section class="l-single-container">
+    <h2 class="l-single-head">会員情報入力</h2>
+
+    <form action="https://www.mercari.com/jp/signup/address/" method="POST" class="l-single-inner" novalidate="novalidate">
+    <input type="hidden" name="__csrf_value" value="642e81c3aad8fe43fde832ed4c2951e73d4253d0c9bb4f6852493c59f6240c3315f0240b7a0f87f537943ed12608eb11a2dac2260095619ea65b13e8c2773a68">
+
+    <div class="l-single-content">
+
+            <div class="form-group">
+      <label for="nickname">ニックネーム</label>
+      <span class="form-require">必須</span>
+      <input
+        type="text"
+        value=""
+        name="nickname"
+        placeholder="例）メルカリ太郎"
+        class="input-default">
+              </div>
+
+            <div class="form-group">
+      <label for="email">メールアドレス</label>
+      <span class="form-require">必須</span>
+      <input
+        type="email"
+        value=""
+        name="email"
+        placeholder="PC・携帯どちらでも可"
+        class="input-default">
+              </div>
+
+
+    <input type="hidden" value="" name="login_type">
+
+                      <div class="form-group">
+        <label for="password">パスワード</label>
+        <span class="form-require">必須</span>
+        <input
+          type="password"
+          name="password"
+          placeholder="6文字以上"
+          class="input-default">
+                  </div>
+
+                <div class="form-group">
+        <label for="password">パスワード（確認）</label>
+        <span class="form-require">必須</span>
+        <input
+          type="password"
+          name="password2"
+          placeholder="6文字以上"
+          class="input-default">
+                  </div>
+
+            <input type="hidden" value="" name="after_save_callback">
+
+    <button type="submit" class="btn-default btn-red">次へ進む</button>
+    </div>
+    </form>
+    </section>
+    </main>
+    </div>
+  </body>
+</html>
