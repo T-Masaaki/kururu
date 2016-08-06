@@ -11,19 +11,17 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <%= f.label :お名前 %><br>
+  <%= f.text_field :name, class: "form-control name-field" %>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.label :Emailアドレス %><br>
+    <%= f.text_field :email, class: "form-control email-field" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "作成", class: "btn add-user-btn" %>
   </div>
+
 <% end %>

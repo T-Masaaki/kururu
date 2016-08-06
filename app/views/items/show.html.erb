@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<p id="notice" class="alert alert_success">
+  <%= notice %>
+</p>
 
 <p>
   <strong>Category:</strong>
@@ -30,5 +32,6 @@
   <%= @item.comment %>
 </p>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<%= link_to "編集", edit_item_path, class:"btn edit-btn"%>
+
+<%= link_to "削除", items_path, method: "delete", class: "btn destroy-btn", "data-confirm" => "本当に削除しますか？"%>
