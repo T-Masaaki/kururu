@@ -722,7 +722,7 @@ text-align : center;
 @media screen and (min-width:768px) {
 .l-single-head {
 padding : 32px 16px;
-font-size : 22px;
+font-size : 50px;
 }
 }
 .l-chapter-container {
@@ -964,7 +964,7 @@ border-color : #0099e8;
 .btn-default {
 display : block;
 width : 100%;
-line-height : 50px;
+/*line-height : 50px;*/
 font-size : 14px;
 transition : all 0.3s ease-out;
 cursor : pointer;
@@ -6942,7 +6942,7 @@ margin : 40px 0 0;
 @media screen and (min-width:768px) {
 .sell-form-box {
 float : right;
-width : 90%;
+width : 99%;
 margin : 0;
 }
 }
@@ -6993,7 +6993,7 @@ cursor : pointer;
 @media screen and (min-width:768px) {
 .sell-upload-drop-box {
 float : right;
-width : 620px;
+width : 99%;
 margin : 0;
 min-height : 184px;
 padding : 40px;
@@ -8014,6 +8014,14 @@ display : none;
 display : block;
 }
 }
+label {
+  font-size: 30px;
+}
+.sell-btn-box input {
+  line-height: 100px;
+  border-radius: 25px;
+  font-size: 30px;
+}
 </style>
 
 
@@ -8030,7 +8038,7 @@ display : block;
 <div class="l-single-container buy-item-container">
 <section class="l-single-container buy-item-container">
 <div id="sell-container">
-<h2 class="l-single-head">アイテムの登録</h2>
+<h1 class="l-single-head">アイテムの登録</h1>
 
 <%= form_for(@item) do |f| %>
   <% if @item.errors.any? %>
@@ -8107,7 +8115,7 @@ display : block;
   </div>
   
   <div class="actions sell-content sell-btn-box">
-    <%= f.submit class: "btn-default btn-red"%>
+    <%= f.submit class: "btn-default btn-red", value: "出品する"%>
   </div>
 <% end %>
 
