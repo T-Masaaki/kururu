@@ -8087,6 +8087,15 @@ label {
   </div>
   </div>
   </div>
+
+  <div class="field sell-content clearfix">
+  <div class="sell-form-box">
+  <div class="form-group">
+    <%= f.label "メールアドレス" %><br>
+    <%= f.text_field :comment, class:"input-default", placeholder:"example@email.com"%>
+  </div>
+  </div>
+  </div>
   
   <div class="field sell-content clearfix">
   <div class="sell-form-box">
@@ -8118,15 +8127,6 @@ label {
   </div>
   
 
-  <div class="field sell-content clearfix">
-  <div class="sell-form-box">
-  <div class="form-group">
-    <%= f.label "コメント" %><br>
-    <%= f.text_field :comment, class:"input-default", email:""%>
-  </div>
-  </div>
-  </div>
-  
   <div class="actions sell-content">
   <div class="button-box">
     <%= f.submit class: "", value: "完了"%>
