@@ -8024,6 +8024,20 @@ display : block;
   </h2>
     
     <div class="items-box-content clearfix">
+    <% @items.each do |item| %>
+      <section class="items-box">
+        <figure class="items-box-photo">
+          <%= image_tag item.image.url %>
+          <!-- <img data-src="https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m712083396_1.jpg?1470390277" class=" lazyloaded" alt="ファミリア ボレロ 新品タグ付き" src="https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m712083396_1.jpg?1470390277"> -->
+        </figure>
+          <div class="items-box-body">
+            <h3 class="items-box-name font-2"><%= item.name %></h3>
+            <div class="items-box-num clearfix">
+              <div class="items-box-price font-6"><%= item.location %></div>
+              </div>
+          </div>
+        </section>
+    <% end %>
               <section class="items-box">
             <figure class="items-box-photo">
               <img data-src="https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m712083396_1.jpg?1470390277" class=" lazyloaded" alt="ファミリア ボレロ 新品タグ付き" src="https://static-mercari-jp-imgtr2.akamaized.net/thumb/photos/m712083396_1.jpg?1470390277">
