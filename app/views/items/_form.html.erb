@@ -6950,8 +6950,11 @@ margin-left: 80px;
 display : none;
 }
 .sell-content {
-padding : 40px;
+  width: 90%;
+padding : 0px;
+margin: auto;
 border-top : 1px solid #eee;
+text-align: center;
 }
 .sell-upload-box {
 padding : 40px 2.5%;
@@ -8015,7 +8018,9 @@ display : block;
 }
 }
 label {
-  font-size: 45px;
+  font-size: 25px;
+  margin-left: 15px;
+  float: left;
 }
 .sell-btn-box input {
   line-height: 100px;
@@ -8029,16 +8034,21 @@ input {
 }
 
 .button-box {
+  width: 80%;
+  margin: 30px auto;
   background-color: red;
   color: white;
   text-align: center;
-  border-radius: 25px;
-  line-height: 100px;
+  /*border-radius: 25px;*/
+  line-height: 50px;
 }
 
-.button-box input {
-  font-size: 60px;
+.sell-upload-drop-box input {
+  font-size: 16px;
 }
+/*.button-box input {
+  font-size: 60px;
+}*/
 </style>
 
 
@@ -8073,6 +8083,16 @@ input {
   <div class="field sell-content clearfix">
   <div class="sell-form-box">
   <div class="form-group">
+    <%= f.label "商品名" %><br>
+    <%= f.text_field :name, class:"input-default"%>
+  </div>
+  </div>
+  </div>
+  
+
+  <div class="field sell-content clearfix">
+  <div class="sell-form-box">
+  <div class="form-group">
     <%= f.label "カテゴリー" %><br>
     <%= f.text_field :category, class:"input-default"%>
   </div>
@@ -8097,16 +8117,6 @@ input {
   <div class="form-group">
     <%= f.label "受け渡し場所" %><br>
     <%= f.text_field :location, class:"input-default"%>
-  </div>
-  </div>
-  </div>
-  
-
-  <div class="field sell-content clearfix">
-  <div class="sell-form-box">
-  <div class="form-group">
-    <%= f.label "商品名" %><br>
-    <%= f.text_field :name, class:"input-default"%>
   </div>
   </div>
   </div>
