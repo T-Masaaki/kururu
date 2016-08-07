@@ -8061,7 +8061,10 @@ label {
 <div class="l-single-container buy-item-container">
 <section class="l-single-container buy-item-container">
 <div id="sell-container">
-<h1 class="l-single-head">ゆずる物の登録</h1>
+<header>
+  <%= image_tag 'logo.jpg', width: '50px', style:"float: left; margin: 30px 0 30px 20px; position: absolute;"%>
+  <h1 class="l-single-head">ゆずる物の登録</h1>
+</header>
 
 <%= form_for(@item) do |f| %>
   <% if @item.errors.any? %>
