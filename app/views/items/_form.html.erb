@@ -8088,8 +8088,12 @@ display : block;
   
 
   <div class="field sell-content clearfix">
+  <div class="sell-form-box">
+  <div class="form-group">
     <%= f.label "購入日" %><br>
-    <%= f.date_select :bought_date, class:"input-default"%>
+    <%= f.text_field :bought_date, class:"input-default"%>
+  </div>
+  </div>
   </div>
   
 
@@ -8102,7 +8106,7 @@ display : block;
   </div>
   </div>
   
-  <div class="actions">
+  <div class="actions sell-content sell-btn-box">
     <%= f.submit class: "btn-default btn-red"%>
   </div>
 <% end %>
