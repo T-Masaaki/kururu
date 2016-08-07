@@ -8083,22 +8083,29 @@ input {
   <div class="field sell-content clearfix">
   <div class="sell-form-box">
   <div class="form-group">
-    <%= f.label "商品名" %><br>
-    <%= f.text_field :name, class:"input-default"%>
+    <%= f.label "ゆずる物の説明" %><br>
+    <%= f.text_field :name, class:"input-default", placeholder: "例)ベビーカー、服・ズボン"%>
   </div>
   </div>
   </div>
   
+  <div class="field sell-content clearfix">
+  <div class="sell-form-box">
+  <div class="form-group">
+    <%= f.label "受け渡し場所、エリア" %><br>
+    <%= f.text_field :location, class:"input-default", placeholder: "例)京都市 下京区"%>
+  </div>
+  </div>
+  </div>
 
   <div class="field sell-content clearfix">
   <div class="sell-form-box">
   <div class="form-group">
-    <%= f.label "カテゴリー" %><br>
-    <%= f.text_field :category, class:"input-default"%>
+    <%= f.label "購入日" %><br>
+    <%= f.text_field :bought_date, class:"input-default", placeholder: "例)去年、2年前"%>
   </div>
   </div>
   </div>
-  
 
   <div class="field sell-content clearfix">
   <div class="sell-form-box">
@@ -8107,26 +8114,6 @@ input {
     <%= f.label "画像" %><br>
     <%= f.file_field :image, class:"input-default"%>
   </div>
-  </div>
-  </div>
-  </div>
-  
-
-  <div class="field sell-content clearfix">
-  <div class="sell-form-box">
-  <div class="form-group">
-    <%= f.label "受け渡し場所" %><br>
-    <%= f.text_field :location, class:"input-default"%>
-  </div>
-  </div>
-  </div>
-  
-
-  <div class="field sell-content clearfix">
-  <div class="sell-form-box">
-  <div class="form-group">
-    <%= f.label "購入日" %><br>
-    <%= f.text_field :bought_date, class:"input-default"%>
   </div>
   </div>
   </div>
