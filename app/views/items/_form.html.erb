@@ -8021,6 +8021,16 @@ label {
   line-height: 100px;
   border-radius: 25px;
   font-size: 30px;
+  width: 100%;
+}
+
+.button-box {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 25px;
+  line-height: 100px;
 }
 </style>
 
@@ -8114,8 +8124,10 @@ label {
   </div>
   </div>
   
-  <div class="actions sell-content sell-btn-box">
-    <%= f.submit class: "btn-default btn-red", value: "出品する"%>
+  <div class="actions sell-content">
+  <div class="button-box">
+    <%= f.submit class: "", value: "出品する"%>
+  </div>
   </div>
 <% end %>
 
