@@ -8029,10 +8029,6 @@ label {
   width: 100%;
 }
 
-input {
-  font-size: 10px;
-}
-
 .button-box {
   width: 80%;
   margin: 30px auto;
@@ -8065,7 +8061,7 @@ input {
 <div class="l-single-container buy-item-container">
 <section class="l-single-container buy-item-container">
 <div id="sell-container">
-<h1 class="l-single-head">アイテムの登録</h1>
+<h1 class="l-single-head">ゆずる物の登録</h1>
 
 <%= form_for(@item) do |f| %>
   <% if @item.errors.any? %>
@@ -8123,14 +8119,14 @@ input {
   <div class="sell-form-box">
   <div class="form-group">
     <%= f.label "コメント" %><br>
-    <%= f.text_field :comment, class:"input-default"%>
+    <%= f.text_field :comment, class:"input-default", email:""%>
   </div>
   </div>
   </div>
   
   <div class="actions sell-content">
   <div class="button-box">
-    <%= f.submit class: "", value: "出品する"%>
+    <%= f.submit class: "", value: "完了"%>
   </div>
   </div>
 <% end %>
